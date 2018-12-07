@@ -18,15 +18,18 @@ One_takes::One_takes(){
 	One_takes_Mineral = 0;
 }
 One_takes::~One_takes(){
+
 }
 void One_takes::Sex(int Calories){
 	this->Daily_recommend_calories = Calories;
 }
 
 void One_takes::One_takes_calories(){
-	int calories_cal = Daily_recommend_calories*ESSENTIAL;
-	One_takes_Carbohydrate = calories_cal / 3;
-	One_takes_Protein = calories_cal / 3;
-	One_takes_Fat = calories_cal / 3;
-	One_takes_Mineral = calories_cal / 3;
+	int temp = Daily_recommend_calories*ESSENTIAL;
+	One_takes_Carbohydrate = (temp / THREE) / THREE;
+	One_takes_Protein = (temp / THREE) / THREE;
+	One_takes_Fat = (temp / THREE) / THREE;
+
+	temp = Daily_recommend_calories*OTHER;
+	One_takes_Mineral = (temp / THREE) / THREE;
 }

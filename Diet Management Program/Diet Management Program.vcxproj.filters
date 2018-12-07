@@ -18,15 +18,21 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="calc.cpp">
+    <ClCompile Include="init.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="init.cpp">
+    <ClCompile Include="Side_dish_data.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Nutrient.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Side_dish.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

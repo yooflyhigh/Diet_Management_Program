@@ -74,12 +74,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Side_dish.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Nutrient.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="calc.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="init.cpp" />
+    <ClCompile Include="Side_dish_data.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
