@@ -7,6 +7,7 @@ using namespace std;
 #define ESSENTIAL 0.75
 #define OTHER 0.25
 #define THREE 3
+
 class Nutrient{
 protected :
 	int Daily_recommend_calories;

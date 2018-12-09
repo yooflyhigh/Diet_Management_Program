@@ -1,10 +1,14 @@
 #include "Nutrient.h"
-
+#include "Menu.h"
+#include "Side_dish.h"
 
 string opening = "다이어트 프로그램에 오신것을 환영합니다.\n\n";
 int main(int argc, char* argv[]){
+	Menu Init;
 	string input;
+
 	One_takes user;
+	Init.data_insert();
 	cout << opening;
 	cout << "남자라면 '남자' 라고 여자라면 '여자' 라고 적어주세요. \n >> ";
 	cin >> input;
