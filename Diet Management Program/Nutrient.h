@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <string>
 using namespace std;
@@ -7,6 +8,7 @@ using namespace std;
 #define ESSENTIAL 0.75
 #define OTHER 0.25
 #define THREE 3
+#define TRUE 1
 
 class Nutrient{
 protected :

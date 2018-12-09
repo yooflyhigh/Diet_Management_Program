@@ -80,8 +80,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="init.cpp" />
-    <ClCompile Include="Side_dish_data.cpp" />
+    <ClCompile Include="Calories_init.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Side_dish_init.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

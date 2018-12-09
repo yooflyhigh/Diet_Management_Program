@@ -18,10 +18,13 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="init.cpp">
+    <ClCompile Include="Calories_init.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Side_dish_data.cpp">
+    <ClCompile Include="Side_dish_init.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

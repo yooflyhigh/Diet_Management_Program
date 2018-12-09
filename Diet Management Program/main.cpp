@@ -4,11 +4,10 @@
 
 string opening = "다이어트 프로그램에 오신것을 환영합니다.\n\n";
 int main(int argc, char* argv[]){
-	Menu Init;
 	string input;
-
 	One_takes user;
-	Init.data_insert();
+	Menu mu;
+
 	cout << opening;
 	cout << "남자라면 '남자' 라고 여자라면 '여자' 라고 적어주세요. \n >> ";
 	cin >> input;
@@ -24,10 +23,21 @@ int main(int argc, char* argv[]){
 	}
 
 	user.One_takes_calories();
-	printf("%d \n",user.One_takes_Carbohydrate);
-	printf("%d \n",user.One_takes_Fat);
-	printf("%d \n",user.One_takes_Protein);
-	printf("%d \n",user.One_takes_Mineral);
 
+	mu.Random_Choice();
+	cout << endl << "오늘의 아침 식단입니다." << endl << "──────────────────────────" << endl;
+	for(int i = 0 ; i < mu.selected_menu.size(); i++){
+		cout << mu.selected_menu[i] << endl;
+	}
+	mu.Random_Choice();
+	cout << endl << "오늘의 점심 식단입니다." << endl << "──────────────────────────" << endl;
+	for(int i = 0 ; i < mu.selected_menu.size(); i++){
+		cout << mu.selected_menu[i] << endl;
+	}	
+	mu.Random_Choice();
+	cout << endl << "오늘의 저녁 식단입니다." << endl << "──────────────────────────" << endl;
+	for(int i = 0 ; i < mu.selected_menu.size(); i++){
+		cout << mu.selected_menu[i] << endl;
+	}
 	return 0;
 }
