@@ -74,6 +74,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="Print.h" />
     <ClInclude Include="Side_dish.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Nutrient.h" />
@@ -82,6 +84,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Calories_init.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Print.cpp" />
     <ClCompile Include="Side_dish_init.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

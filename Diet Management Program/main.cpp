@@ -1,43 +1,38 @@
-#include "Nutrient.h"
-#include "Menu.h"
-#include "Side_dish.h"
+#include "main.h"
 
-string opening = "다이어트 프로그램에 오신것을 환영합니다.\n\n";
+
 int main(int argc, char* argv[]){
 	string input;
+	int days;
 	One_takes user;
 	Menu mu;
+	Print pr;
 
-	cout << opening;
-	cout << "남자라면 '남자' 라고 여자라면 '여자' 라고 적어주세요. \n >> ";
-	cin >> input;
-	if(! input.compare("남자")){
-		user.Sex(MALE);
-	}
-	else if(! input.compare("여자")){
-		user.Sex(FEMALE);
-	}
-	else{
-		cout << "잘못 입력하셨습니다.";
-		return 0;
-	}
+	while(TRUE){
+		input = pr.setUser();
 
+		if( ! input.compare(MAN) ){
+			user.Sex(MALE);
+			break;
+		}
+
+		else if( !input.compare(WOMAN) ){
+			user.Sex(FEMALE);
+			break;
+		}
+
+		else{
+			pr.Msg_Perror();
+			continue;
+		}
+	}
+	if(!(days = pr.setDays())){
+		pr.Msg_Perror();
+		return 1;
+	}
 	user.One_takes_calories();
-
-	mu.Random_Choice();
-	cout << endl << "오늘의 아침 식단입니다." << endl << "──────────────────────────" << endl;
-	for(int i = 0 ; i < mu.selected_menu.size(); i++){
-		cout << mu.selected_menu[i] << endl;
-	}
-	mu.Random_Choice();
-	cout << endl << "오늘의 점심 식단입니다." << endl << "──────────────────────────" << endl;
-	for(int i = 0 ; i < mu.selected_menu.size(); i++){
-		cout << mu.selected_menu[i] << endl;
-	}	
-	mu.Random_Choice();
-	cout << endl << "오늘의 저녁 식단입니다." << endl << "──────────────────────────" << endl;
-	for(int i = 0 ; i < mu.selected_menu.size(); i++){
-		cout << mu.selected_menu[i] << endl;
-	}
+	mu.Random_Choice(mu,days);
+	pr.Msg_Anykey(100,(days)/6*10);
+	pr.Msg_Closing();
 	return 0;
 }

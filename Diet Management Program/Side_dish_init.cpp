@@ -1,4 +1,5 @@
-#include "Side_dish.h"
+#include "main.h"
+
 
 Side_dish::Side_dish(){
 	name.push_back("»Úπ‰");

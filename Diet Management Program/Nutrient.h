@@ -1,14 +1,6 @@
 #pragma once
-#include <iostream>
-#include <string>
-using namespace std;
+#include "Main.h"
 
-#define MALE 2500
-#define FEMALE 2000
-#define ESSENTIAL 0.75
-#define OTHER 0.25
-#define THREE 3
-#define TRUE 1
 
 class Nutrient{
 protected :
@@ -22,6 +14,7 @@ public :
 	~Nutrient();
 	virtual void One_takes_calories() = 0;
 };
+
 
 class One_takes : public Nutrient{
 public:

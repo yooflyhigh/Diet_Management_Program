@@ -1,4 +1,4 @@
-#include "Nutrient.h"
+#include "main.h"
 
 
 Nutrient::Nutrient(){	
@@ -8,8 +8,10 @@ Nutrient::Nutrient(){
 	Daily_need_Mineral = 0;
 }
 
+
 Nutrient::~Nutrient(){
 }
+
 
 One_takes::One_takes(){
 	One_takes_Carbohydrate = 0;
@@ -17,12 +19,17 @@ One_takes::One_takes(){
 	One_takes_Fat = 0;
 	One_takes_Mineral = 0;
 }
+
+
 One_takes::~One_takes(){
 
 }
+
+
 void One_takes::Sex(int Calories){
 	this->Daily_recommend_calories = Calories;
 }
+
 
 void One_takes::One_takes_calories(){
 	int temp = Daily_recommend_calories*ESSENTIAL;
