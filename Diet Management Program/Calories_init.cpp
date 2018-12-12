@@ -13,6 +13,11 @@ Nutrient::~Nutrient(){
 }
 
 
+int Nutrient::getDaily_rec_cal(){
+	return Daily_recommend_calories;
+}
+
+
 One_takes::One_takes(){
 	One_takes_Carbohydrate = 0;
 	One_takes_Protein = 0;

@@ -31,8 +31,9 @@ int main(int argc, char* argv[]){
 		return 1;
 	}
 	user.One_takes_calories();
-	mu.Random_Choice(mu,days);
-	pr.Msg_Anykey(100,(days)/6*10);
+	pr.calories = user.getDaily_rec_cal();
+	mu.Random_Choice(pr,days);
+	pr.Msg_Anykey(100, days*10);
 	pr.Msg_Closing();
 	return 0;
 }

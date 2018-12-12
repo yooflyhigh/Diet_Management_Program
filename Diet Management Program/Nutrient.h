@@ -12,6 +12,7 @@ protected :
 public :
 	Nutrient();
 	~Nutrient();
+	int getDaily_rec_cal();
 	virtual void One_takes_calories() = 0;
 };
 

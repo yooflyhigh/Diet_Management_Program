@@ -3,13 +3,13 @@
 
 
 class Menu{
-	Side_dish Sp;
+	Side_dish Sd;
 	One_takes Ot;
-	Print pr;
 public:
 	vector<string> selected_menu;
+	vector<char> selected_Nut;
 	Menu();
 	~Menu();
-	void Random_Choice(Menu mu,int days);
+	void Random_Choice(Print pr,int days);
 	
 };
